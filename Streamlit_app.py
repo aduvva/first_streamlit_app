@@ -7,7 +7,7 @@ streamlit.text('🥣 Omega 3 & Blueberry Oatmeal')
 streamlit.text('🥗 Kale, Spinach & Rocket Smoothie')
 streamlit.text('🐔 Hard-Boiled Free-Range Egg')
 streamlit.text('🥑🍞 Avacado Toast')
-streamlit.text('🥑🍞 Avacado Toast')
+
 streamlit.header('🍌🍓 Build your own Fruit Smoothie 🥝🍇')
 
 import pandas
@@ -19,4 +19,4 @@ fruits_selected = streamlit.multiselect("Pick some fruits:", list(my_fruit_list.
 fruits_to_show = my_fruit_list.loc[fruits_selected]
 
 #display the table on the page
-streamlit.dataframe(my_fruit_list)
+streamlit.dataframe(fruits_to_show)
